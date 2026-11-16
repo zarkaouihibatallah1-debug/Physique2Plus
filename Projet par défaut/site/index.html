@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physique2plus — simulateur de polariseur dichroïque</title>
+  <meta name="description" content="Physique2plus — simulateur pas à pas d'un polariseur dichroïque : indices complexes, Fresnel, absorption, puissances, performances et polarisation de sortie.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="sr-only" href="#part">Aller au contenu</a>
+
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#/accueil" aria-label="Accueil">
+        <img src="assets/logo.png" alt="Physique2plus">
+      </a>
+      <p class="brand-caption">Physique2plus</p>
+
+      <div class="who">
+        <dl>
+          <dt>Étudiant :</dt><dd>ZARKAOUI Hibat-Allah</dd>
+          <dt>Classe :</dt><dd>GSR</dd>
+        </dl>
+        <p class="goal">Le but de ce travail : comprendre, étape par étape, comment une couche absorbante anisotrope sélectionne une polarisation — et savoir régler le compromis entre extinction et transmission.</p>
+      </div>
+
+      <p class="nav-title">Les parties</p>
+      <nav class="nav" id="nav" aria-label="Parties du site"></nav>
+    </aside>
+
+    <main class="main" id="main">
+      <div id="part" tabindex="-1">
+        <noscript>
+          <p>Ce simulateur a besoin de JavaScript pour calculer et dessiner les schémas.</p>
+        </noscript>
+      </div>
+    </main>
+
+    <aside class="rail" id="rail" aria-label="Paramètres, matériaux et équations"></aside>
+  </div>
+
+  <button type="button" class="rail-toggle" id="rail-toggle" aria-controls="rail" aria-expanded="false">
+    <span class="rail-toggle-dot" aria-hidden="true"></span>Réglages
+  </button>
+  <div class="rail-backdrop" id="rail-backdrop" hidden></div>
+
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/auto-render.min.js"></script>
+  <script src="js/complex.js"></script>
+  <script src="js/materials.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/format.js"></script>
+  <script src="js/tests.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/schematic.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
